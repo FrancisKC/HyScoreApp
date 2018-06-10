@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f0000"
+    tools:context="com.example.francis.hyscoreapp.Activities.FirstActivity">
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:background="@color/colorWhite"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:visibility="visible"
+        android:text="@string/sign_up"
+        android:onClick="initSignUp"
+        android:layout_above="@+id/button_log_in"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_log_in"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:visibility="visible"
+        android:text="@string/log_in"
+        android:onClick="initLogIn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_sign_up"
+        android:layout_alignStart="@+id/button_sign_up"
+        android:layout_marginBottom="64dp" />
+</RelativeLayout>
